@@ -14,6 +14,16 @@ a {
     color: inherit;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Header */
 header {
     width: 100%;
@@ -71,9 +81,11 @@ header ul {
     align-items: center;
 }
 
-/* Main */
 
+/* Main */
 main {
+    /* background-image: linear-gradient(135deg, #b195ee, #6957ae, #eae6f7); */
+    flex: 1;
     width: 100%;
     height: 100%;
     display: flex;
@@ -93,6 +105,7 @@ main .text {
 
 main .text h2 {
     font-size: 7rem;
+    text-shadow: 2px 2px 2px black;
     color: #85629F;
     font-family: 'Inter';
 }
@@ -116,8 +129,8 @@ main button {
 }
 
 main img {
-    height: 350px;
-    width: 400px;
+    height: 22rem;
+    width: 25rem;
 }
 
 main .hero {
@@ -155,7 +168,7 @@ main .apresentation p{
 /* Footer */
 footer{
     width: 100%;
-    height: 80px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
